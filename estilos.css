@@ -1,0 +1,135 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos del menú de navegación */
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li:hover .submenu {
+    display: block; /* Mostrar el submenú al pasar el mouse */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 0;
+    top: 100%; /* Asegura que el submenú se muestre justo debajo del elemento principal */
+    left: 0;
+    width: 200px;
+    z-index: 1000;
+}
+
+.submenu li {
+    display: block;
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    color: white;
+    text-align: left;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para las secciones de ejercicios */
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    background-color: white;
+    border: 2px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #666;
+    font-size: 16px;
+}
+
+.imagen-ejercicio {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilo responsive */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+    }
+
+    section {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
